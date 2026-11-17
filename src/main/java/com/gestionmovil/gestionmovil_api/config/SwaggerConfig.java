@@ -16,7 +16,7 @@ public class SwaggerConfig {
 				.info(new Info()
 						.title("API Gestion Movil")
 						.version("1.0")
-						.description("API REST para la gestión de supervisores, ejecutivos, oportunidades de la empresa Gestion Movil")
+						.description("API REST para la gestión de supervisores, ejecutivos, oportunidades de la empresa Gestión Movil")
 					);
 						
 	}
