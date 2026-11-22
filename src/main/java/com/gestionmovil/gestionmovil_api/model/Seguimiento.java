@@ -16,7 +16,7 @@ public class Seguimiento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private long fecha; // Usualmente guardamos timestamps
     private String descripcion;

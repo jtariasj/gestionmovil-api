@@ -16,7 +16,7 @@ public class Organizacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private String nombreEmpresa;
     private String rut;
