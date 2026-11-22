@@ -1,0 +1,79 @@
+// Registro 1
+{
+  "nombre": "Expo Minería Antofagasta 2026",
+  "tipo": "FERIA",
+  "descripcion": "Stand corporativo para exhibición de maquinaria industrial",
+  "fuenteInformacion": "Portal Web Sectorial",
+  "fechaDeteccion": 1794000000000,
+  "responsable": "Ejecutivo Uno",
+  "prioridad": "ALTA",
+  "potencialComercial": "ALTO",
+  "estado": "EVENTO_IDENTIFICADO",
+  "fechaActualizacion": 1794000000000,
+  "observaciones": "Solicitar cotización de espacio esquina",
+  "fotoPath": null
+}
+
+// Registro 2
+{
+  "nombre": "Feria Construcción Sustentable",
+  "tipo": "FERIA",
+  "descripcion": "Activación de marca y demostración en vivo de materiales",
+  "fuenteInformacion": "Cámara Chilena de la Construcción",
+  "fechaDeteccion": 1794100000000,
+  "responsable": "Ejecutivo Dos",
+  "prioridad": "MEDIA",
+  "potencialComercial": "MEDIO",
+  "estado": "EVENTO_IDENTIFICADO",
+  "fechaActualizacion": 1794100000000,
+  "observaciones": "Incluir material audiovisual",
+  "fotoPath": null
+}
+
+// Registro 3
+{
+  "nombre": "Encuentro Innovación Tecnológica",
+  "tipo": "FERIA",
+  "descripcion": "Pabellón de soluciones digitales para empresas",
+  "fuenteInformacion": "LinkedIn Corporativo",
+  "fechaDeteccion": 1794200000000,
+  "responsable": "Ejecutivo Tres",
+  "prioridad": "ALTA",
+  "potencialComercial": "ALTO",
+  "estado": "EVENTO_IDENTIFICADO",
+  "fechaActualizacion": 1794200000000,
+  "observaciones": "Alta afluencia de gerentes TI",
+  "fotoPath": null
+}
+
+// Registro 4
+{
+  "nombre": "Feria Agroindustrial del Sur",
+  "tipo": "FERIA",
+  "descripcion": "Muestra de equipamiento agrícola y riego tecnificado",
+  "fuenteInformacion": "Invitación directa",
+  "fechaDeteccion": 1794300000000,
+  "responsable": "Ejecutivo Uno",
+  "prioridad": "MEDIA",
+  "potencialComercial": "ALTO",
+  "estado": "EVENTO_IDENTIFICADO",
+  "fechaActualizacion": 1794300000000,
+  "observaciones": "Coordinar traslado de equipos",
+  "fotoPath": null
+}
+
+// Registro 5
+{
+  "nombre": "Expo Logística y Comercio Exterior",
+  "tipo": "FERIA",
+  "descripcion": "Rueda de negocios y stand informativo portuario",
+  "fuenteInformacion": "Boletín Industrial",
+  "fechaDeteccion": 1794400000000,
+  "responsable": "Ejecutivo Dos",
+  "prioridad": "BAJA",
+  "potencialComercial": "BAJO",
+  "estado": "EVENTO_IDENTIFICADO",
+  "fechaActualizacion": 1794400000000,
+  "observaciones": "Evaluar participación compartida",
+  "fotoPath": null
+}

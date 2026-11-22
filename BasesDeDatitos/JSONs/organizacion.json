@@ -1,0 +1,34 @@
+// Registro 1
+{
+  "nombreEmpresa": "Minera Escondida Norte S.A.",
+  "rut": "76.123.456-7",
+  "direccion": "Av. Apoquindo 4500, Las Condes"
+}
+
+// Registro 2
+{
+  "nombreEmpresa": "Constructora Andes Ltda.",
+  "rut": "77.234.567-8",
+  "direccion": "Av. Providencia 1234, Providencia"
+}
+
+// Registro 3
+{
+  "nombreEmpresa": "Tecnología Austral SpA",
+  "rut": "78.345.678-9",
+  "direccion": "Calle Libertad 890, Viña del Mar"
+}
+
+// Registro 4
+{
+  "nombreEmpresa": "Agroindustria del Maule S.A.",
+  "rut": "79.456.789-0",
+  "direccion": "Ruta 5 Sur Km 255, Talca"
+}
+
+// Registro 5
+{
+  "nombreEmpresa": "Logística Pacífico Sur Ltda.",
+  "rut": "76.987.654-3",
+  "direccion": "Av. Colón 3100, Talcahuano"
+}

@@ -1,0 +1,39 @@
+// Registro 1
+{
+  "fecha": 1794500000000,
+  "descripcion": "Llamada inicial con encargado de pabellón para consultar tarifas",
+  "tipoGestion": "Llamada",
+  "oportunidadId": 1
+}
+
+// Registro 2
+{
+  "fecha": 1794550000000,
+  "descripcion": "Envío de brochure corporativo y propuesta de auspicio",
+  "tipoGestion": "Correo",
+  "oportunidadId": 3
+}
+
+// Registro 3
+{
+  "fecha": 1794600000000,
+  "descripcion": "Reunión presencial para revisar plano de ubicación del stand",
+  "tipoGestion": "Reunión",
+  "oportunidadId": 2
+}
+
+// Registro 4
+{
+  "fecha": 1794650000000,
+  "descripcion": "Confirmación de dimensiones eléctricas requeridas en el recinto",
+  "tipoGestion": "Correo",
+  "oportunidadId": 1
+}
+
+// Registro 5
+{
+  "fecha": 1794700000000,
+  "descripcion": "Seguimiento telefónico sobre disponibilidad de acreditaciones",
+  "tipoGestion": "Llamada",
+  "oportunidadId": 4
+}

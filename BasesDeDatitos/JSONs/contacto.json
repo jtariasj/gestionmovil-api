@@ -1,0 +1,44 @@
+// Registro 1
+{
+  "nombre": "Camila Fuentes",
+  "cargo": "Jefa de Marketing",
+  "telefono": "+56987654321",
+  "correo": "camila.fuentes@gmail.com",
+  "organizacionId": 1
+}
+
+// Registro 2
+{
+  "nombre": "Rodrigo Valdés",
+  "cargo": "Gerente Comercial",
+  "telefono": "+56976543210",
+  "correo": "rodrigo.valdes@test.com",
+  "organizacionId": 3
+}
+
+// Registro 3
+{
+  "nombre": "Valentina Rojas",
+  "cargo": "Coordinadora de Eventos",
+  "telefono": "+56965432109",
+  "correo": "valentina.rojas@gmail.com",
+  "organizacionId": 2
+}
+
+// Registro 4
+{
+  "nombre": "Sebastián Morales",
+  "cargo": "Subgerente de Operaciones",
+  "telefono": "+56954321098",
+  "correo": "sebastian.morales@test.com",
+  "organizacionId": 5
+}
+
+// Registro 5
+{
+  "nombre": "Fernanda Castro",
+  "cargo": "Encargada de Adquisiciones",
+  "telefono": "+56943210987",
+  "correo": "fernanda.castro@gmail.com",
+  "organizacionId": 4
+}
