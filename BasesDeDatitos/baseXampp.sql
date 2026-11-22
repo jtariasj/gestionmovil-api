@@ -74,11 +74,11 @@ INSERT INTO oportunidad (
     responsable, prioridad, potencial_comercial, estado,
     fecha_actualizacion, observaciones, foto_path
 ) VALUES
-('Expo Minería Antofagasta 2026', 'FERIA', 'Stand corporativo para exhibición de maquinaria industrial', 'Portal Web Sectorial', 1794000000000, 'Ejecutivo Uno', 'ALTA', 'ALTO', 'EVENTO_IDENTIFICADO', 1794000000000, 'Solicitar cotización de espacio esquina', NULL),
-('Feria Construcción Sustentable', 'FERIA', 'Activación de marca y demostración en vivo de materiales', 'Cámara Chilena de la Construcción', 1794100000000, 'Ejecutivo Dos', 'MEDIA', 'MEDIO', 'EVENTO_IDENTIFICADO', 1794100000000, 'Incluir material audiovisual', NULL),
-('Encuentro Innovación Tecnológica', 'FERIA', 'Pabellón de soluciones digitales para empresas', 'LinkedIn Corporativo', 1794200000000, 'Ejecutivo Tres', 'ALTA', 'ALTO', 'EVENTO_IDENTIFICADO', 1794200000000, 'Alta afluencia de gerentes TI', NULL),
-('Feria Agroindustrial del Sur', 'FERIA', 'Muestra de equipamiento agrícola y riego tecnificado', 'Invitación directa', 1794300000000, 'Ejecutivo Uno', 'MEDIA', 'ALTO', 'EVENTO_IDENTIFICADO', 1794300000000, 'Coordinar traslado de equipos', NULL),
-('Expo Logística y Comercio Exterior', 'FERIA', 'Rueda de negocios y stand informativo portuario', 'Boletín Industrial', 1794400000000, 'Ejecutivo Dos', 'BAJA', 'BAJO', 'EVENTO_IDENTIFICADO', 1794400000000, 'Evaluar participación compartida', NULL);
+      ('Expo Minería Antofagasta 2026', 'FERIA_EMPRESARIAL', 'Stand corporativo para exhibición de maquinaria industrial', 'Portal Web Sectorial', 1794000000000, 'Ejecutivo Uno', 'ALTA', 'ALTO', 'EVENTO_IDENTIFICADO', 1794000000000, 'Solicitar cotización de espacio esquina', NULL),
+      ('Feria Construcción Sustentable', 'EVENTO_CORPORATIVO', 'Activación de marca y demostración en vivo de materiales', 'Cámara Chilena de la Construcción', 1794100000000, 'Ejecutivo Dos', 'MEDIA', 'MEDIO', 'EVENTO_IDENTIFICADO', 1794100000000, 'Incluir material audiovisual', NULL),
+      ('Encuentro Innovación Tecnológica', 'FERIA_INSTITUCIONAL', 'Pabellón de soluciones digitales para empresas', 'LinkedIn Corporativo', 1794200000000, 'Ejecutivo Tres', 'ALTA', 'ALTO', 'EVENTO_IDENTIFICADO', 1794200000000, 'Alta afluencia de gerentes TI', NULL),
+      ('Feria Agroindustrial del Sur', 'ACTIVACION_COMERCIAL', 'Muestra de equipamiento agrícola y riego tecnificado', 'Invitación directa', 1794300000000, 'Ejecutivo Uno', 'MEDIA', 'ALTO', 'EVENTO_IDENTIFICADO', 1794300000000, 'Coordinar traslado de equipos', NULL),
+      ('Expo Logística y Comercio Exterior', 'FERIA_EMPRESARIAL', 'Rueda de negocios y stand informativo portuario', 'Boletín Industrial', 1794400000000, 'Ejecutivo Dos', 'BAJA', 'BAJO', 'EVENTO_IDENTIFICADO', 1794400000000, 'Evaluar participación compartida', NULL);
 
 -- 5. Tabla SEGUIMIENTO
 CREATE TABLE IF NOT EXISTS seguimiento (
