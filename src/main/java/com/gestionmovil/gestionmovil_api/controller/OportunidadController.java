@@ -23,19 +23,15 @@ public class OportunidadController {
     @Operation(summary = "Obtiene todas las oportunidades existentes")
     @GetMapping
     public ResponseEntity<List<Oportunidad>> listar() {
-        List<Oportunidad> oportunidades = service.getOportunidades();
-        if (oportunidades.isEmpty()) {
-            return ResponseEntity.notFound().build(); // 404
-        } else {
-            return ResponseEntity.ok(oportunidades); // 200
-        }
+        return ResponseEntity.ok(service.getOportunidades());
     }
 
     @Operation(summary = "Obtiene todos los detalles de una oportunidad en específico")
     @GetMapping("/{id}")
     public ResponseEntity<Oportunidad> buscar(@PathVariable int id) {
-        Oportunidad opp = service.getOportunidadById(id).orElseThrow();
-        return ResponseEntity.ok(opp); // 200
+        return service.getOportunidadById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Crea una nueva oportunidad")

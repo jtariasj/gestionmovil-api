@@ -23,19 +23,15 @@ public class OrganizacionController {
     @Operation(summary = "Obtiene todas las organizaciones existentes")
     @GetMapping
     public ResponseEntity<List<Organizacion>> listar() {
-        List<Organizacion> organizaciones = service.getOrganizaciones();
-        if (organizaciones.isEmpty()) {
-            return ResponseEntity.notFound().build(); // 404
-        } else {
-            return ResponseEntity.ok(organizaciones); // 200
-        }
+        return ResponseEntity.ok(service.getOrganizaciones());
     }
 
     @Operation(summary = "Obtiene todos los detalles de una organizacion en específico")
     @GetMapping("/{id}")
     public ResponseEntity<Organizacion> buscar(@PathVariable int id) {
-        Organizacion org = service.getOrganizacionById(id).orElseThrow();
-        return ResponseEntity.ok(org); // 200
+        return service.getOrganizacionById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Crea una nueva organizacion")

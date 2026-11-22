@@ -23,19 +23,15 @@ public class ContactoController {
     @Operation(summary = "Obtiene todos los contactos existentes")
     @GetMapping
     public ResponseEntity<List<Contacto>> listar() {
-        List<Contacto> contactos = service.getContactos();
-        if (contactos.isEmpty()) {
-            return ResponseEntity.notFound().build(); // 404
-        } else {
-            return ResponseEntity.ok(contactos); // 200
-        }
+        return ResponseEntity.ok(service.getContactos());
     }
 
     @Operation(summary = "Obtiene todos los detalles de un contacto en específico")
     @GetMapping("/{id}")
     public ResponseEntity<Contacto> buscar(@PathVariable int id) {
-        Contacto cont = service.getContactoById(id).orElseThrow();
-        return ResponseEntity.ok(cont); // 200
+        return service.getContactoById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Crea un nuevo contacto")

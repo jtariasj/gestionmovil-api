@@ -23,19 +23,15 @@ public class UsuarioController {
     @Operation(summary = "Obtiene todos los usuarios existentes")
     @GetMapping
     public ResponseEntity<List<Usuario>> listar() {
-        List<Usuario> usuarios = service.getUsuarios();
-        if (usuarios.isEmpty()) {
-            return ResponseEntity.notFound().build(); // 404
-        } else {
-            return ResponseEntity.ok(usuarios); // 200
-        }
+        return ResponseEntity.ok(service.getUsuarios());
     }
 
     @Operation(summary = "Obtiene todos los detalles de un usuario en específico")
     @GetMapping("/{id}")
     public ResponseEntity<Usuario> buscar(@PathVariable int id) {
-        Usuario usr = service.getUsuarioById(id).orElseThrow();
-        return ResponseEntity.ok(usr); // 200
+        return service.getUsuarioById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Crea un nuevo usuario")

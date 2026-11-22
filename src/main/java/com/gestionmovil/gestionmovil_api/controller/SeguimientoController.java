@@ -23,19 +23,15 @@ public class SeguimientoController {
     @Operation(summary = "Obtiene todos los seguimientos existentes")
     @GetMapping
     public ResponseEntity<List<Seguimiento>> listar() {
-        List<Seguimiento> seguimientos = service.getSeguimientos();
-        if (seguimientos.isEmpty()) {
-            return ResponseEntity.notFound().build(); // 404
-        } else {
-            return ResponseEntity.ok(seguimientos); // 200
-        }
+        return ResponseEntity.ok(service.getSeguimientos());
     }
 
     @Operation(summary = "Obtiene todos los detalles de un seguimiento en específico")
     @GetMapping("/{id}")
     public ResponseEntity<Seguimiento> buscar(@PathVariable int id) {
-        Seguimiento seg = service.getSeguimientoById(id).orElseThrow();
-        return ResponseEntity.ok(seg); // 200
+        return service.getSeguimientoById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Crea un nuevo seguimiento")
